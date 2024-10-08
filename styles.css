@@ -1,4 +1,4 @@
-body
+/* body
     {
     background: linear-gradient(to right, olive, rgb(35, 69, 35));
     font-family: Arial, Helvetica, sans-serif;
@@ -27,18 +27,69 @@ p
     div {text-align: center;}
 
 
-    .projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+    .projects { display:flex; flex-wrap:wrap; } 
 .project 
     {
         width: 30%;
         margin: 10px;
         padding: 20px 10px;
-        background: rgba(159, 247, 226, 0.61); /* pick a color */
+        background: rgba(159, 247, 226, 0.61); 
         border-radius: 25%;
     }
 
 img 
     {
-        width: 500px; /* Adjust the size as needed */
-        height: auto; /* Keeps the aspect ratio */
-    }
+        width: 500px; 
+        height: auto; 
+  }
+ */
+
+ body {
+    background: linear-gradient(to right, olive, rgb(35, 69, 35));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(198, 230, 154);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(147, 234, 234);
+    text-shadow: 1px 1px beige; /* Add more defined shadow */
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+.projects {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center; /* Center the project cards */
+    gap: 5px; /* Add space between the cards */
+}
+
+/* Adjust width for better responsiveness */
+.project { /*Deal with the box in which the contents are*/
+    width: 20%; /* Change width for better fit | Makes the box more square and upwards */
+    margin: 50px;
+    padding: 20px 10px;
+    background: rgba(159, 247, 226, 0.61); /* Soft background color */
+    border-radius: 15px; /* Less rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    text-align:center;
+}
+
+/* Responsive image size */
+img {
+    width: 50%; /* Set to 100% of the container */
+    max-width: 300px; /* Limit max size */
+    height: 50; /* Keeps the aspect ratio */
+}
+
